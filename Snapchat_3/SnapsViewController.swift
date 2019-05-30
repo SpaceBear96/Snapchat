@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SnapsViewController.swift
 //  Snapchat_3
 //
 //  Created by Cafu Aguilar on 5/30/19.
@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SnapsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
-
+    @IBAction func cerrarSesionTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
-
