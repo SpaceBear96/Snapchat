@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E117FFC22A1CB370052EAB8 /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E117FFB22A1CB370052EAB8 /* ElegirUsuarioViewController.swift */; };
+		0E11800122A1D2ED0052EAB8 /* Pintgram-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E11800022A1D2B30052EAB8 /* Pintgram-Italic.ttf */; };
 		0E17EBB122A0688A0060D36E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E17EBB022A0688A0060D36E /* AppDelegate.swift */; };
 		0E17EBB322A0688A0060D36E /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E17EBB222A0688A0060D36E /* iniciarSesionViewController.swift */; };
 		0E17EBB622A0688A0060D36E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E17EBB422A0688A0060D36E /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E117FFB22A1CB370052EAB8 /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
+		0E11800022A1D2B30052EAB8 /* Pintgram-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pintgram-Italic.ttf"; sourceTree = "<group>"; };
 		0E17EBAD22A0688A0060D36E /* Snapchat_3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapchat_3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E17EBB022A0688A0060D36E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E17EBB222A0688A0060D36E /* iniciarSesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iniciarSesionViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		0E117FFF22A1D2AC0052EAB8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0E11800022A1D2B30052EAB8 /* Pintgram-Italic.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		0E17EBA422A0688A0060D36E = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +89,7 @@
 		0E17EBAF22A0688A0060D36E /* Snapchat_3 */ = {
 			isa = PBXGroup;
 			children = (
+				0E117FFF22A1D2AC0052EAB8 /* Font */,
 				0E17EBC422A074540060D36E /* Snapchat_3.entitlements */,
 				0E17EBB022A0688A0060D36E /* AppDelegate.swift */,
 				0E17EBB222A0688A0060D36E /* iniciarSesionViewController.swift */,
@@ -87,6 +100,7 @@
 				0E17EBBC22A0688A0060D36E /* Info.plist */,
 				0E17EBC722A0760A0060D36E /* SnapsViewController.swift */,
 				0E17EBC922A07DE70060D36E /* ImagenViewController.swift */,
+				0E117FFB22A1CB370052EAB8 /* ElegirUsuarioViewController.swift */,
 			);
 			path = Snapchat_3;
 			sourceTree = "<group>";
@@ -164,6 +178,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E11800122A1D2ED0052EAB8 /* Pintgram-Italic.ttf in Resources */,
 				0E17EBBB22A0688A0060D36E /* LaunchScreen.storyboard in Resources */,
 				0E17EBC322A068E30060D36E /* GoogleService-Info.plist in Resources */,
 				0E17EBB822A0688A0060D36E /* Assets.xcassets in Resources */,
@@ -231,6 +246,7 @@
 				0E17EBCA22A07DE70060D36E /* ImagenViewController.swift in Sources */,
 				0E17EBB122A0688A0060D36E /* AppDelegate.swift in Sources */,
 				0E17EBC822A0760A0060D36E /* SnapsViewController.swift in Sources */,
+				0E117FFC22A1CB370052EAB8 /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

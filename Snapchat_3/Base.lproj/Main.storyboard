@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pintgram-Italic.ttf">
+            <string>Pintgram-Italic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Iniciar Sesion View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -18,30 +23,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Snapchat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdM-qS-LRL">
-                                <rect key="frame" x="89.5" y="45" width="196" height="58"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="io3-8H-YSD">
-                                <rect key="frame" x="87.5" y="183" width="200" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdM-qS-LRL">
+                                <rect key="frame" x="97" y="45" width="181" height="59.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="fZd-QA-yk3"/>
+                                    <constraint firstAttribute="width" constant="181" id="iYh-uF-gLb"/>
                                 </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJb-kw-Boh">
-                                <rect key="frame" x="142" y="243" width="91" height="30"/>
+                                <fontDescription key="fontDescription" name="Pintgram-Italic" family="Pintgram" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJb-kw-Boh">
+                                <rect key="frame" x="125" y="341" width="125" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="FM5-gn-rDq"/>
+                                    <constraint firstAttribute="height" constant="50" id="mXa-Xz-Xac"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="21"/>
                                 <state key="normal" title="Iniciar Sesion"/>
                                 <connections>
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXh-QT-X3K"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kN3-qL-0gU">
-                                <rect key="frame" x="87.5" y="128" width="200" height="30"/>
+                                <rect key="frame" x="87.5" y="250" width="200" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="f4I-TB-Xf0"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ff5-0B-QMB"/>
@@ -50,17 +55,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instagram-icon-png" translatesAutoresizingMaskIntoConstraints="NO" id="PIx-eg-eEk">
+                                <rect key="frame" x="125" y="117.5" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="Elp-qt-AL4"/>
+                                    <constraint firstAttribute="height" constant="125" id="ekf-yS-pUg"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="io3-8H-YSD">
+                                <rect key="frame" x="87.5" y="295" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="fZd-QA-yk3"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.75686274509803919" green="0.20784313725490194" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kN3-qL-0gU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3at-5b-EW9"/>
-                            <constraint firstItem="io3-8H-YSD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F9g-Nt-Zb6"/>
-                            <constraint firstItem="io3-8H-YSD" firstAttribute="top" secondItem="kN3-qL-0gU" secondAttribute="bottom" constant="25" id="IJP-0q-Tdv"/>
-                            <constraint firstItem="FdM-qS-LRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OPl-kk-Inm"/>
-                            <constraint firstItem="kN3-qL-0gU" firstAttribute="top" secondItem="FdM-qS-LRL" secondAttribute="bottom" constant="25" id="U7A-dr-aJx"/>
-                            <constraint firstItem="SJb-kw-Boh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aqD-e5-7xw"/>
-                            <constraint firstItem="SJb-kw-Boh" firstAttribute="top" secondItem="io3-8H-YSD" secondAttribute="bottom" constant="30" id="bMN-gQ-Itn"/>
-                            <constraint firstItem="FdM-qS-LRL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="d51-1B-5BM"/>
+                            <constraint firstItem="kN3-qL-0gU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ou-QI-cIe"/>
+                            <constraint firstItem="FdM-qS-LRL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DCD-py-DYv"/>
+                            <constraint firstItem="io3-8H-YSD" firstAttribute="top" secondItem="kN3-qL-0gU" secondAttribute="bottom" constant="15" id="IjA-V5-IVR"/>
+                            <constraint firstItem="SJb-kw-Boh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pvc-QH-TJK"/>
+                            <constraint firstItem="io3-8H-YSD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YgP-DI-zza"/>
+                            <constraint firstItem="PIx-eg-eEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fTN-HI-vaF"/>
+                            <constraint firstItem="SJb-kw-Boh" firstAttribute="top" secondItem="io3-8H-YSD" secondAttribute="bottom" constant="16" id="n7y-Ix-SeG"/>
+                            <constraint firstItem="PIx-eg-eEk" firstAttribute="firstBaseline" secondItem="FdM-qS-LRL" secondAttribute="baseline" constant="28" symbolType="layoutAnchor" id="rP8-kU-1sZ"/>
+                            <constraint firstItem="FdM-qS-LRL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="vfU-l5-a6N"/>
+                            <constraint firstItem="kN3-qL-0gU" firstAttribute="firstBaseline" secondItem="FdM-qS-LRL" secondAttribute="baseline" constant="180" id="xSs-v2-ZUn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -72,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="26"/>
+            <point key="canvasLocation" x="232.80000000000001" y="25.637181409295355"/>
         </scene>
         <!--Snaps View Controller-->
         <scene sceneID="A2F-Fw-e8F">
@@ -161,20 +185,35 @@
             </objects>
             <point key="canvasLocation" x="2486" y="26"/>
         </scene>
-        <!--View Controller-->
+        <!--Elegir Usuario View Controller-->
         <scene sceneID="h4y-rT-izz">
             <objects>
-                <viewController id="qSs-lZ-iEa" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="qSs-lZ-iEa" customClass="ElegirUsuarioViewController" customModule="Snapchat_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uGJ-2a-RXQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sbH-oR-qyE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sbH-oR-qyE" firstAttribute="top" secondItem="uXQ-2D-e2b" secondAttribute="top" id="5oZ-kX-ACu"/>
+                            <constraint firstItem="uXQ-2D-e2b" firstAttribute="trailing" secondItem="sbH-oR-qyE" secondAttribute="trailing" id="BLy-UW-3EN"/>
+                            <constraint firstItem="sbH-oR-qyE" firstAttribute="leading" secondItem="uXQ-2D-e2b" secondAttribute="leading" id="GzR-1c-AvU"/>
+                            <constraint firstItem="uXQ-2D-e2b" firstAttribute="bottom" secondItem="sbH-oR-qyE" secondAttribute="bottom" id="Puk-fh-4RI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uXQ-2D-e2b"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="sbH-oR-qyE" id="7jW-95-JQj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcL-YC-zmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3321" y="39"/>
+            <point key="canvasLocation" x="3217" y="26"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qm3-fh-RAo">
@@ -195,4 +234,7 @@
             <point key="canvasLocation" x="1015" y="26"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="instagram-icon-png" width="640" height="640"/>
+    </resources>
 </document>
